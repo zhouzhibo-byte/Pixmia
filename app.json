@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Pixmia",
+    "slug": "pixmia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "scheme": "pixmia",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#F7F7F4"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pixmia.app"
+    },
+    "android": {
+      "package": "com.pixmia.app",
+      "softwareKeyboardLayoutMode": "resize",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#5A5BF0"
+      },
+      "allowBackup": false,
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Pixmia 需要访问相册，以便把生成的图片保存到你的手机。",
+          "savePhotosPermission": "Pixmia 需要保存图片到你的相册。",
+          "isAccessMediaLocationEnabled": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Pixmia 需要访问相册，以便选择本地参考图片。"
+        }
+      ],
+      "expo-asset"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f176337f-9210-4f62-9f32-2d02c03f394e"
+      }
+    }
+  }
+}
